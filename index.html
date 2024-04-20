@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.js"> </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+        $('.search-bar').hide();
+       
+        $('.menu-dropdown').hide();
+        $('.menu1').hide();
+        $('.menu2').hide();
+        $('.menu3').hide();
+        $('.menu4').hide();
+
+        $('.menu-link').click(function () {
+            $('.menu-dropdown').slideToggle(500);
+        });
+
+        $('.menu1-link').click(function () {
+            $('.menu1').slideToggle(500);
+        });
+     
+        $('.menu2-link').click(function () {
+            $('.menu2').slideToggle(500);
+        });
+        $('.menu3-link').click(function () {
+            $('.menu3').slideToggle(500);
+        });
+        $('.menu4-link').click(function () {
+            $('.menu4').slideToggle(500);
+        });
+        $('.search').click(function () {
+            $('.search-bar').toggle(300);
+        });
+
+    }
+        );
+    </script>
+    <title>TasteVibe | Fast Food Resturant</title>
+
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid nav-cont">
+                <a class="navbar-brand text-light fs-1 fw-bolder" href="#"><img src="images/logo.png" width="100%"
+                        height="100%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  fw-bold ms-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link red-active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item menu-link">
+                            <a class="nav-link text-light" href="#">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  " href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link icon cart ">
+
+                                <i class="fa-solid fa-cart-shopping "></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  icon" href="#">
+                                <i class="fa-solid fa-magnifying-glass search text-light"></i>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <div class="menu-dropdown">
+                        <ul>
+                            <li class="menu1-link"><a href="#" >Menu # 1</a>
+                                <div class="menu1">
+                                    <ul>
+                                        <li><a href="burger.html">Burgers#1</a></li>      
+                                        <li><a href="burger.html">Burgers#2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu2-link"><a href="#">Menu # 2</a></li>
+                                <div class="menu2">
+                                    <ul>
+                                        <li><a href="pizza.html">Pizza#1</a></li>      
+                                        <li><a href="pizza.html">Pizza#2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu3-link"><a href="#" >Menu # 3</a>
+                                <div class="menu3">
+                                    <ul>
+                                        <li><a href="rolls.html">Rolls#1</a></li>      
+                                        <li><a href="rolls.html">Rolls#2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu4-link"><a href="#" >Menu # 4</a>
+                                <div class="menu4">
+                                    <ul>
+                                        <li><a href="drinks.html">Drinks#1</a></li>      
+                                        <li><a href="drinks.html">Drinks#2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                         
+
+                        </ul>
+                    </div>
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search Your TasteVibes">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="slider-cont">
+                <div class="slider-left">
+                    <h1><span>Welcome To TasteVibe</span></h1>
+                    <h1 class="title">ENJOY YOUR
+                        FAVORITE FOOD
+                        WITH FAMILY</h1>
+                    <button class="btn">Explore Menu -></button>
+                </div>
+                <div class="slider-right">
+                    <img src="images/burger.png" width="100%">
+                </div>
+
+        
+        </div>
+
+
+    </main>
+    <div class="container popular">
+        <div class="row">
+            <div class="subtitle">
+                <span>Best Food Menu</span>
+                <h1>Our Popular Food Items</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 popular-item">
+                <div class="card">
+                    <img src="images/zinger.avif" class="card-img-top">
+                    <div class="card-body">
+                        <h1>Bief Burger</h1>
+                        <p>Japnese Bief Burger</p>
+                        <span>$27.43</span>
+                    </div>
+                    <img class="fire" src="images/fire.png">
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 popular-item">
+                <div class="card">
+                    <img src="images/zinger.avif" class="card-img-top">
+                    <div class="card-body">
+                        <h1>Zinger Burger</h1>
+                        <p>Japnese Zinger Burger</p>
+                        <span>$35.59</span>
+                    </div>
+                    <img class="fire" src="images/fire.png">
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 popular-item">
+                <div class="card">
+                    <img src="images/rise 1.avif" class="card-img-top">
+                    <div class="card-body">
+                        <h1>Chinese Rice</h1>
+                        <p>Chinese Oninon Rice</p>
+                        <span>$43.4</span>
+                    </div>
+                    <img class="fire" src="images/fire.png">
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-3 popular-item">
+                <div class="card">
+                    <img src="images/sushi.avif" class="card-img-top">
+                    <div class="card-body">
+                        <h1>Sushi</h1>
+                        <p>South Korean Suchi</p>
+                        <span>$23.3</span>
+                    </div>
+                    <img class="fire" src="images/fire.png">
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <div class="row">
+            <div class="col-lg-6 about-left">
+                <span>TasteVibe's Beginnings</span>
+                <h1>Experience the harmonious fusion of flavors</h1>
+                <p>"Experience the harmonious fusion of flavors and ambiance at TasteVibe, where every dish tells a
+                    story and every visit becomes a cherished memory. Join us on a gastronomic journey that celebrates
+                    culinary creativity and the joy of shared moments."</p>
+                <div class="about-left-box">
+                    <img src="images/about-left-box.png" width="100%">
+                </div>
+                <div class="about-left-box box2">
+                    <h1>Our Culinary Odyssey:</h1>
+                    <p>Every dish we serve tells a story – a story of inspiration. Our culinary team</p>
+                </div>
+                <button class="btn">About More -></button>
+
+            </div>
+            <div class="col-lg-6 about-right">
+                <img src="images/plate.png" width="100%">
+                <div class="circle-img">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row offer">
+
+
+        <div class="col-sm-3 sale1">
+            <span>Today Special Offer</span>
+            <h1>Delicious Burger</h1>
+            <p>The Best Burger</p>
+        </div>
+        <div class=" col-sm-6 sale-img">
+            <img src="images/slae.png">
+        </div>
+
+
+
+
+
+    </div>
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="sub-title">
+                    <span>Our Menu Items</span>
+                    <h1>Our Best Foods Menu</h1>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="selection-box tab-links active-selction">
+                    <div class="selection-img">
+                        <img src="images/burgerpng.png" width="100%">
+
+                    </div>
+                    <h1>Burger Menu</h1>
+                </div>
+
+                <div class="selection-box tab-links">
+                    <div class="selection-img">
+                        <img src="images/pizzapng.png" width="100%">
+
+                    </div>
+                    <h1>Pizza Menu</h1>
+                </div>
+
+                <div class="selection-box tab-links">
+                    <div class="selection-img">
+                        <img src="images/roll.jpg" width="100%">
+
+                    </div>
+                    <h1>Rolls Menu</h1>
+                </div>
+
+                <div class="selection-box tab-links">
+                    <div class="selection-img">
+                        <img src="images/drinks.png" width="100%" height="130%">
+
+                    </div>
+                    <h1>Cold Drinks</h1>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12 menu-box tab-contents active-tab">
+                    <div class="row">
+                        <div class="col-lg-5 menu-item ">
+                            <div class="row">
+                                <div class="col-sm-4 menu-img">
+                                    <img src="images/bief burger.avif" width="100%" height="100%">
+                                </div>
+                                <div class="col-sm-8 menu-text">
+                                    <h1>Bief Burger ---------- <span>$27.54</span></h1>
+                                    <p>Tasty and Juisy Bief Burger</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-5 menu-item">
+                            <div class="row">
+                                <div class="col-sm-4 menu-img">
+                                    <img src="images/zinger.avif" width="100%">
+                                </div>
+                                <div class="col-sm-8 menu-text">
+                                    <h1>Zinger Burger ----- <span>$27.54</span></h1>
+                                    <p>Tasty and Juisy Bief Burger</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 menu-item">
+                            <div class="row">
+                                <div class="col-sm-4 menu-img">
+                                    <img src="images/cheese.jpg" width="100%" height="100%">
+                                </div>
+                                <div class="col-sm-8 menu-text">
+                                    <h1>cheese Burger ------ <span>$12.54</span></h1>
+                                    <p>Tasty and Juisy cheese Burger</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-5 menu-item">
+                            <div class="row">
+                                <div class="col-sm-4 menu-img">
+                                    <img src="images/kfc.jpg" width="100%" height="100%">
+                                </div>
+                                <div class="col-sm-8 menu-text">
+                                    <h1>Crunch Burger --- <span>$47.54</span></h1>
+                                    <p>Tasty and Juisy Crunch Burger</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 menu-item">
+                            <div class="row">
+                                <div class="col-sm-4 menu-img">
+                                    <img src="images/deal burger.jpg" width="100%" height="100%">
+                                </div>
+                                <div class="col-sm-8 menu-text">
+                                    <h1>Burger Deal 1------- <span>$67.54</span></h1>
+                                    <p>Tasty and Juisy Deal Burger</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-5 menu-item">
+                            <div class="row">
+                                <div class="col-sm-4 menu-img">
+                                    <img src="images/double zinger.jpg" width="100%" height="100%">
+                                </div>
+                                <div class="col-sm-8 menu-text">
+                                    <h1>Double Zinger ------ <span>$87.54</span></h1>
+                                    <p>Tasty and Juisy Double Zinger Burger</p>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <footer class="footer-layer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 footer-box">
+                        <h1>About Resturant</h1>
+                        <p>At TasteVibe, we're not just a restaurant – we're a canvas where flavors, passion, and
+                            ambiance come together to create unforgettable experiences. Our journey began with a simple
+                            yet powerful idea: to redefine dining by offering a symphony of tastes that resonate with
+                            the soul.
+
+                        </p>
+
+                    </div>
+                    <div class="col-lg-3 footer-box">
+                        <h1>TasteVibe</h1>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Menu</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Blogs</a>
+
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+
+                            </li>
+                            <li>
+
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-box">
+                        <h1>Recent Posts</h1>
+                        <div class="recent-post">
+                            <div class="recent-img">
+                                <img src="images/about-left-box.png" height="100%">
+                            </div>
+
+                        </div>
+                        <div class="recent-post">
+                            <div class="recent-img">
+                                <img src="images/burger.png" height="100%">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 footer-box">
+                        <h1>Contact Us</h1>
+                        <ul class="contact-ul">
+                            <li>
+
+                                <a href="#"> <i class="fa-solid fa-location-dot"></i>ATTN: Dennis Menees, CEO
+                                    Global Co.
+                                    90210 Broadway Blvd.
+                                    Nashville, TN 37011-5678</a>
+
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-phone"></i>Phone No : +923645564729</a>
+
+                            </li>
+                            <li>
+                                <a href="mailto:TasteVibe@gmail.com"><i class="fa-solid fa-envelope"></i>Email-
+                                    TasteVibe@gmail.com</a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 subscription">
+                        <h1>Subscription News</h1>
+                        <input type="email" placeholder="Enter Your Emial">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 copyright">
+                        <h1>Copyright @2023 Made By <span>Huzaifa Younus</span></h1>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </footer>
+
+</body>
+
+</html>

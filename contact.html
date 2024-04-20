@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.js"> </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.4.2-web/css/all.css">
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+        $('.search-bar').hide();
+       
+        $('.menu-dropdown').hide();
+        $('.menu1').hide();
+        $('.menu2').hide();
+        $('.menu3').hide();
+        $('.menu4').hide();
+
+        $('.menu-link').click(function () {
+            $('.menu-dropdown').slideToggle(500);
+        });
+
+        $('.menu1-link').click(function () {
+            $('.menu1').slideToggle(500);
+        });
+     
+        $('.menu2-link').click(function () {
+            $('.menu2').slideToggle(500);
+        });
+        $('.menu3-link').click(function () {
+            $('.menu3').slideToggle(500);
+        });
+        $('.menu4-link').click(function () {
+            $('.menu4').slideToggle(500);
+        });
+        $('.search').click(function () {
+            $('.search-bar').toggle(300);
+        });
+
+    }
+        );
+    </script>
+    <title>TasteVibe | Fast Food Resturant</title>
+
+</head>
+
+<body>
+<!--Main contact-->
+
+<div class="blogs-main">
+
+<!--NavBar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid nav-cont">
+                <a class="navbar-brand text-light fs-1 fw-bolder" href="#"><img src="images/logo.png" width="100%"
+                        height="100%"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  fw-bold ms-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item menu-link">
+                            <a class="nav-link " href="#">Menu</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link   " href="blogs.html">Blogs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link red-active" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link icon cart ">
+
+                                <i class="fa-solid fa-cart-shopping "></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  icon">
+
+                                <i class="fa-solid fa-magnifying-glass search"></i>
+
+                            </a>
+                        </li>
+
+
+                    </ul>
+                    <div class="menu-dropdown">
+                        <ul>
+                            <li class="menu1-link"><a href="#" >Menu # 1</a>
+                                <div class="menu1">
+                                    <ul>
+                                        <li><a href="burger.html">Burgers#1</a></li>      
+                                        <li><a href="burger.html">Burgers#2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu2-link"><a href="#">Menu # 2</a></li>
+                                <div class="menu2">
+                                    <ul>
+                                        <li><a href="pizza.html">Pizza#1</a></li>      
+                                        <li><a href="pizza.html">Pizza#2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu3-link"><a href="#" >Menu # 3</a>
+                                <div class="menu3">
+                                    <ul>
+                                        <li><a href="rolls.html">Rolls#1</a></li>      
+                                        <li><a href="rolls.html">Rolls#2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu4-link"><a href="#" >Menu # 4</a>
+                                <div class="menu4">
+                                    <ul>
+                                        <li><a href="drinks.html">Drinks#1</a></li>      
+                                        <li><a href="drinks.html">Drinks#2</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                         
+
+                        </ul>
+                    </div>
+                    <div class="search-bar">
+                        <input type="search" placeholder="Search Your TasteVibes">
+                    </div>
+                </div>
+            </div>
+        </nav>
+ <!--contact Title-->
+<div class="row">
+    <div class="menu-title">
+        <span>TasteVibe</span>
+        <h1>Contact Section</h1>
+    </div>
+</div>
+
+
+
+</div>
+
+<div class="container contact-cont">
+    <div class="row">
+        <div class="col-lg-3 contact-card" id="contact-card-1">
+            <div class="contact-card-layer"></div>
+            <h1>Food Delivery</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eius!</p>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-3 contact-card" id="contact-card-2">
+            <div class="contact-card-layer"></div>
+         
+            <h1>Quality Food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eius!</p>
+        </div>
+        <div class="col-lg-1"></div>
+
+        <div class="col-lg-3 contact-card" id="contact-card-3">
+            <div class="contact-card-layer"></div>
+            <h1>Orignal Recipe</h1>
+           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, eius!</p>
+        </div>
+        
+
+    </div>
+</div>
+<div class="row form-row">
+    <div class="form-row-layer"></div>
+    <div class="form-cont">
+        <form>
+            <h1>Make A Reservation</h1>
+   
+                <div class="row">
+                  <div class="col-sm">
+                    <input type="text" class="form-control" placeholder="First name">
+                  </div>
+                  <div class="col-sm">
+                    <input type="text" class="form-control" placeholder="Last name">
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                      <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col-sm">
+                      <input type="text" class="form-control" placeholder="Last name">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <textarea  class="form-control" placeholder="Specail Note"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button class="btn">Book A Table</button>
+                    </div>
+                  </div>
+       
+
+</form>
+   
+    </div>
+</div>
+<div class="row map-row">
+    <div class="col-lg-4 map">
+        <img src="images/map.png" width="100%">
+    </div>
+    <div class="col-lg-8 map-text">
+        <div class="row">
+            <div class="col-sm-6">
+        <h1>TasteVibe</h1>
+        <p>St Johns Pl/Nostrand Av, Brooklyn, NY 11216, USA</p>
+        <p>+92536453421</p>
+        <a href="mailto:tastevibe@gmail.com">
+            Tastevibe@gmail.com
+        </a>
+        <h1>Workig Hours</h1>
+        <p>Monday – Friday from 8:00 am to 11:30 pm</p>
+        <p>Weekends from 9:00 am to 11:00 pm</p>
+    </div>
+        <div class=" col-sm-6 map-img">
+            <img src="images/rollsimg1.avif">
+        </div>
+        </div>
+    </div>
+  
+</div>
+
+
+<!--Footer-->
+   <footer>
+    <footer class="footer-layer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 footer-box">
+                        <h1>About Resturant</h1>
+                        <p>At TasteVibe, we're not just a restaurant – we're a canvas where flavors, passion, and
+                            ambiance come together to create unforgettable experiences. Our journey began with a simple
+                            yet powerful idea: to redefine dining by offering a symphony of tastes that resonate with
+                            the soul.
+
+                        </p>
+
+                    </div>
+                    <div class="col-lg-3 footer-box">
+                        <h1>TasteVibe</h1>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Menu</a>
+
+                            </li>
+                            <li>
+                                <a href="#">Blogs</a>
+
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+
+                            </li>
+                            <li>
+
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 footer-box">
+                        <h1>Recent Posts</h1>
+                        <div class="recent-post">
+                            <div class="recent-img">
+                                <img src="images/about-left-box.png" height="100%">
+                            </div>
+
+                        </div>
+                        <div class="recent-post">
+                            <div class="recent-img">
+                                <img src="images/burger.png" height="100%">
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 footer-box">
+                        <h1>Contact Us</h1>
+                        <ul class="contact-ul">
+                            <li>
+
+                                <a href="#"> <i class="fa-solid fa-location-dot"></i>ATTN: Dennis Menees, CEO
+                                    Global Co.
+                                    90210 Broadway Blvd.
+                                    Nashville, TN 37011-5678</a>
+
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-solid fa-phone"></i>Phone No : +923645564729</a>
+
+                            </li>
+                            <li>
+                                <a href="mailto:TasteVibe@gmail.com"><i class="fa-solid fa-envelope"></i>Email-
+                                    TasteVibe@gmail.com</a>
+
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 subscription">
+                        <h1>Subscription News</h1>
+                        <input type="email" placeholder="Enter Your Emial">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 copyright">
+                        <h1>Copyright @2023 Made By <span>Huzaifa Younus</span></h1>
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+   </footer>
+
+
+</body>
+
+</html>
